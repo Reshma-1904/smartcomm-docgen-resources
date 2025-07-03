@@ -1,0 +1,9 @@
+// Shared Greeting
+Dear <MergeField field="Customer.FirstName" /> <MergeField field="Customer.LastName" />,
+
+// Shared Closing
+<p>Thank you for being a valued member of ABC Insurance.</p>
+<p>If you have any questions, contact us at <b>support@abcinsurance.com</b> or call <b>1-800-123-4567</b>.</p>
+
+// Shared Disclaimer
+<p><i>This document is intended only for the policyholder. Please refer to your policy booklet for full terms and conditions.</i></p>
