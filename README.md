@@ -14,7 +14,7 @@ This repository showcases my hands-on experience with **Smart Communications (Sm
 | `templates/` | Sample SmartComm document templates (XML format) |
 | `data-models/` | XSD schema and sample XML input data |
 | `scripts/` | Shared content and document scripts used for conditional logic and formatting |
-| `outputs/` | (Optional) Screenshots or sample outputs of generated documents |
+
 
 ---
 
