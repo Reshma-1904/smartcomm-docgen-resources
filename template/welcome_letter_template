@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SmartCommTemplate>
+  <Document>
+    <Header>
+      <CompanyName>ABC Insurance</CompanyName>
+      <DocumentTitle>Welcome Letter</DocumentTitle>
+    </Header>
+
+    <Body>
+      <Greeting>
+        Dear <MergeField field="Customer.FirstName" /> <MergeField field="Customer.LastName" />,
+      </Greeting>
+
+      <Message>
+        Thank you for choosing ABC Insurance! Your policy has been successfully activated.
+      </Message>
+
+      <PolicyDetails>
+        <p><b>Policy Number:</b> <MergeField field="Policy.Number" /></p>
+        <p><b>Start Date:</b> <MergeField field="Policy.StartDate" format="MM/dd/yyyy" /></p>
+        <p><b>Plan:</b> <MergeField field="Policy.PlanName" /></p>
+      </PolicyDetails>
+
+      <ConditionalSection condition="Customer.HasDependents == true">
+        <p>You have enrolled dependents under your plan. Please review the enclosed summary.</p>
+      </ConditionalSection>
+
+      <Closing>
+        <p>If you have questions, contact us at support@abcinsurance.com or call 1-800-123-4567.</p>
+        <p>Sincerely,<br/>ABC Insurance Team</p>
+      </Closing>
+    </Body>
+
+    <Footer>
+      <Legal>
+        <p>This document is confidential. Refer to your policy booklet for full terms and conditions.</p>
+      </Legal>
+    </Footer>
+  </Document>
+</SmartCommTemplate>
