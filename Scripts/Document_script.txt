@@ -1,0 +1,18 @@
+// Document Script for SmartComm
+
+// Set a default value if FirstName is missing
+if (!Customer.FirstName) {
+    Customer.FirstName = "Valued Customer";
+}
+
+// Format Policy Start Date
+if (Policy.StartDate) {
+    var dateObj = new Date(Policy.StartDate);
+    var options = { year: 'numeric', month: 'long', day: 'numeric' };
+    Policy.FormattedStartDate = dateObj.toLocaleDateString("en-US", options);
+}
+
+// Uppercase Plan Name
+if (Policy.PlanName) {
+    Policy.PlanNameUpper = Policy.PlanName.toUpperCase();
+}
