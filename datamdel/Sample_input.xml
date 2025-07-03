@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomerData xmlns="http://www.abcinsurance.com">
+
+  <Customer>
+    <FirstName>Reshma</FirstName>
+    <LastName>R</LastName>
+    <HasDependents>true</HasDependents>
+  </Customer>
+
+  <Policy>
+    <Number>POL12345678</Number>
+    <StartDate>2025-07-01</StartDate>
+    <PlanName>Gold Family Plan</PlanName>
+  </Policy>
+
+</CustomerData>
