@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.abcinsurance.com"
+           xmlns="http://www.abcinsurance.com"
+           elementFormDefault="qualified">
+
+  <xs:element name="CustomerData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Customer" type="CustomerType"/>
+        <xs:element name="Policy" type="PolicyType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="CustomerType">
+    <xs:sequence>
+      <xs:element name="FirstName" type="xs:string"/>
+      <xs:element name="LastName" type="xs:string"/>
+      <xs:element name="HasDependents" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PolicyType">
+    <xs:sequence>
+      <xs:element name="Number" type="xs:string"/>
+      <xs:element name="StartDate" type="xs:date"/>
+      <xs:element name="PlanName" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
